@@ -25,5 +25,15 @@ public class App {
         System.out.println("2. feladat");
         System.out.print("Adja meg egy település kódját! Település: ");
         String settlement = console.read();
+        System.out.println("Az utolsó mérési adat a megadott településről " +
+                service.getLastReportTimeFromSettlement(settlement) +
+                "-kor érkezett.");
+        System.out.println("3. feladat");
+        System.out.println("A legalacsonyabb hőmérséklet: " +
+                service.getLowestTemperatureReport());
+        System.out.println("A legmagasabb hőmérséklet: " +
+                service.getHighestTemperatureReport());
+        System.out.println("4. feladat");
+        System.out.println(service.getCalmReportDetails());
     }
 }
