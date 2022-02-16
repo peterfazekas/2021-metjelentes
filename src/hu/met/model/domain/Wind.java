@@ -21,7 +21,5 @@ public class Wind {
         IntStream.range(0, windForce)
                 .forEach(i -> sb.append("#"));
         return sb.toString();
-
-
     }
 }

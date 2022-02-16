@@ -35,5 +35,9 @@ public class App {
                 service.getHighestTemperatureReport());
         System.out.println("4. feladat");
         System.out.println(service.getCalmReportDetails());
+        System.out.println("5. feladat");
+        System.out.println(service.getTemperaturesBySettlement());
+        System.out.println("6. feladat");
+        System.out.println(service.writeWindReportsBySettlements());
     }
 }
